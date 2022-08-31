@@ -47,4 +47,19 @@ button, .button{
     border-radius: 50px;
     cursor: pointer;
     color: white;
+    font-weight: 400;
+}
+
+// Visibility
+.hide-for-mobile{// hide for tablet amd mobile
+
+    @include breakpoint-down(medium){
+        display:none;
+    }
+}
+
+.hide-for-desktop{// hide for desktop viewport width
+    @include breakpoint-up (large){
+        display:none;
+    }
 }
