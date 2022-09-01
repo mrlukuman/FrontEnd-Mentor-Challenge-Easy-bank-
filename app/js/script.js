@@ -1,14 +1,21 @@
 const btnHamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.header')
 
+const overlay = document.querySelector('.overlay')
+
 btnHamburger.addEventListener('click', 
 function() {
 
-    if (header.classList.contains('open')){
-    header.classList.remove('open')
-    console.log("open hamburgur");
-    }else{
-    header.classList.add('open')
-    console.log("close hamburgur");
+    if (header.classList.contains('open')){  // Close hambuger menu
+        console.log("open hamburgur");
+        header.classList.remove('open');
+        overlay.classList.remove('fade-in');
+        overlay.classList.add('fade-out');
+    }else{ // open hamburgur menu
+        console.log("close hamburgur");
+        header.classList.add('open');
+        overlay.classList.remove('fade-out');
+        overlay.classList.add('fade-in');
+    
     }
 });
