@@ -4,6 +4,7 @@
 
     .overlay{
       display: block;
+      
     }
 
     .header__toggle{
@@ -32,6 +33,7 @@
     right: 0px;
     left: 0px;
     background-image: linear-gradient($darkBlue, transparent);
+    z-index: 1;
   }
 
 
@@ -40,6 +42,7 @@
     background-color: white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    z-index: 2;
   }
 
   &__logo {
@@ -79,6 +82,7 @@
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
+    z-index: 1;
 
     a{
       display: block;
